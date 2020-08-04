@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+  </head>
+
+  <body>
+
+    <input type="button" value="+1" onclick="val.innerText++"/><span id="val">0</span>
+    <input type="button" value="-1" onclick="val.innerText--"/>
+
+    <div class="full-basket" id="basket">
+      <div id="mask"></div>
+
+      <div class="basket">
+        <div class="basket-inner">
+          <div class="basket-head">
+            <div class="close-title">Корзина</div>
+            <button id="close">
+              <img src="img/close.svg" alt="close">
+            </button>
+          </div>
+          <div class="basket-content">
+  
+            <div class="basket-line">
+              <div class="basket-name">Ролл угорь стандарт</div>
+              <div class="basket-content-inner">
+                <div class="basket-price">250 ₽</div>
+                <button class="minus buttons-change" id="minus">-</button>
+                <div class="basket-quantity ics" id="basket-quantity">1</div>
+                <button class="plus buttons-change"  id="plus">+</button>
+              </div>
+            </div>
+            <div class="basket-line">
+              <div class="basket-name">Калифорния лосось стандарт</div>
+              <div class="basket-content-inner">
+                <div class="basket-price">395 ₽</div>
+                <button class="minus buttons-change" id="minus">-</button>
+                <div class="basket-quantity ics" id="basket-quantity">1</div>
+                <button class="plus buttons-change" id="plus">+</button>
+              </div>
+            </div>
+            <div class="basket-line">
+              <div class="basket-name">Окинава стандарт</div>
+              <div class="basket-content-inner">
+                <div class="basket-price">250 ₽</div>
+                <button class="minus buttons-change" id="minus">-</button>
+                <div class="basket-quantity" id="basket-quantity">1</div>
+                <button class="plus buttons-change" id="plus">+</button>
+              </div>
+            </div>
+            <div class="basket-line">
+              <div class="basket-name">Цезарь маки хl</div>
+              <div class="basket-content-inner">
+                <div class="basket-price">250 ₽</div>
+                <button class="minus buttons-change" id="minus">-</button>
+                <div class="basket-quantity" id="basket-quantity">1</div>
+                <button class="plus buttons-change" id="plus">+</button>
+              </div>
+            </div>
+            <div class="basket-line">
+              <div class="basket-name">Ясай маки стандарт 185 г</div>
+              <div class="basket-content-inner">
+                <div class="basket-price">250 ₽</div>
+                <button class="minus buttons-change" id="minus">-</button>
+                <div class="basket-quantity" id="basket-quantity">1</div>
+                <button class="plus buttons-change" id="plus">+</button>
+              </div>
+            </div>
+            <div class="basket-line">
+              <div class="basket-name">Ролл с креветкой стандарт</div>
+              <div class="basket-content-inner">
+                <div class="basket-price">250 ₽</div>
+                <button class="minus buttons-change" id="minus">-</button>
+                <div class="basket-quantity" id="basket-quantity">1</div>
+                <button class="plus buttons-change" id="plus">+</button>
+              </div>
+            </div>
+  
+          </div>
+          
+          <div class="basket-footer">
+            <div class="basket-full-price">1000 ₽</div>
+            <div class="basket-buttons">
+              <button class="button button-primary">
+                Оформить заказ
+              </button>
+              <button class="button" id="canceling">
+                Отмена
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <header class="header">
+        <img src="img/logo.svg" alt="logo" class="logo">
+        <input type="text" class="input input-address" placeholder="Адрес доставки">
+        <div class="buttons">
+            <button class="button button-primary">
+              <img src="img/user.svg" alt="user" class="button-icon">
+              <span class="button-text">Войти</span>
+            </button>
+            <button class="button" id="button-basket">
+              <img src="img/shopping-cart.svg" alt="shopping cart" class="button-icon">
+              <span class="button-text">Корзина</span>
+            </button>
+        </div>
+      </header>
+  
+
+      <section>
+
+        <div class="restaurant">
+          <h2 class="restaurant-title">Пицца плюс</h2>
+          <div class="restaurant-info">
+            <div class="rating">
+              <img src="img/rating.svg" alt="rating" class="rating-img">
+              4.5
+            </div>
+            <div class="price">От 900 ₽</div>
+            <div class="category">Пицца</div>
+          </div>
+        </div>
+
+        <div class="restaurant-cards">
+                        
+          <div class="restaurant-card">
+            <img class="restaurant-card-img" src="img/restaurant/image1.jpg" alt="">
+            <div class="restaurant-card-content">
+              <h2 class="restaurant-card-title">Ролл угорь стандарт</h2>
+              <p class="restaurant-card-text">Рис, угорь, соус унаги, кунжут, водоросли нори.</p>
+            </div>
+            <div class="restaurant-card-footer">
+              <button class="button button-primary">В корзину<img src="img/icon-basket.svg" alt="shopping cart" class="restaurant-icon"></button>
+              <div class="restaurant-card-price">250₽</div>
+            </div>
+
+          </div>
+
+          <div class="restaurant-card">
+            <img class="restaurant-card-img" src="img/restaurant/image2.jpg" alt="">
+            <div class="restaurant-card-content">
+              <h2 class="restaurant-card-title">Калифорния лосось стандарт</h2>
+              <p class="restaurant-card-text">Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.</p>
+            </div>
+            <div class="restaurant-card-footer">
+              <button class="button button-primary">В корзину<img src="img/icon-basket.svg" alt="shopping cart" class="restaurant-icon"></button>
+              <div class="restaurant-card-price">395₽</div>
+            </div>
+
+          </div>
+
+          <div class="restaurant-card">
+            <img class="restaurant-card-img" src="img/restaurant/image3.jpg" alt="">
+            <div class="restaurant-card-content">
+              <h2 class="restaurant-card-title">Окинава стандарт</h2>
+              <p class="restaurant-card-text"> Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...</p>
+            </div>
+            <div class="restaurant-card-footer">
+              <button class="button button-primary">В корзину<img src="img/icon-basket.svg" alt="shopping cart" class="restaurant-icon"></button>
+              <div class="restaurant-card-price">250₽</div>
+            </div>
+
+          </div>
+          
+          <div class="restaurant-card">
+            <img class="restaurant-card-img" src="img/restaurant/image4.jpg" alt="">
+            <div class="restaurant-card-content">
+              <h2 class="restaurant-card-title">Цезарь маки хl</h2>
+              <p class="restaurant-card-text">Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...</p>
+            </div>
+            <div class="restaurant-card-footer">
+              <button class="button button-primary">В корзину<img src="img/icon-basket.svg" alt="shopping cart" class="restaurant-icon"></button>
+              <div class="restaurant-card-price">250₽</div>
+            </div>
+
+          </div>
+
+          <div class="restaurant-card">
+            <img class="restaurant-card-img" src="img/restaurant/image5.jpg" alt="">
+            <div class="restaurant-card-content">
+              <h2 class="restaurant-card-title">Ясай маки стандарт 185 г</h2>
+              <p class="restaurant-card-text">Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг</p>
+            </div>
+            <div class="restaurant-card-footer">
+              <button class="button button-primary">В корзину<img src="img/icon-basket.svg" alt="shopping cart" class="restaurant-icon"></button>
+              <div class="restaurant-card-price">250₽</div>
+            </div>
+
+          </div>
+          
+          <div class="restaurant-card">
+            <img class="restaurant-card-img" src="img/restaurant/image6.jpg" alt="">
+            <div class="restaurant-card-content">
+              <h2 class="restaurant-card-title">Ролл с креветкой стандарт</h2>
+              <p class="restaurant-card-text">Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы</p>
+            </div>
+            <div class="restaurant-card-footer">
+              <button class="button button-primary">В корзину<img src="img/icon-basket.svg" alt="shopping cart" class="restaurant-icon"></button>
+              <div class="restaurant-card-price">250₽</div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <footer class="footer">
+
+        <div class="footer-inner">
+    
+          <div class="footer_content">
+    
+            <img class="footer_img" src="img/logo.svg" alt="">
+    
+            <div class="footer_link">
+              <a href="#">Ресторанам </a>
+              <a href="#">Курьерам</a>
+              <a href="#">Пресс-центр</a>
+              <a href="#">Контакты</a>
+            </div>
+    
+        </div>
+    
+        <div class="icons">
+          <a href="#">
+            <img class="icon" src="img/inst.svg" alt="">
+          </a>
+          <a href="#">
+            <img class="icon" src="img/fb.svg" alt="">
+          </a>
+          <a href="#">
+            <img class="icon" src="img/vk.svg" alt="">
+          </a>
+        </div>
+    
+    
+        </div>
+    
+      </footer>
+
+    </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.0.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
