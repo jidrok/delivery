@@ -29,7 +29,8 @@ body{
   background-position: left 11px center;
 }
 .input-address{
-  width: 690px;
+  width: 60%;
+  max-width: 690px;
   background-image: url(../img/home.svg);
 }
 .input-search{
@@ -63,17 +64,26 @@ body{
 }
 .promo{
   box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
-  background: #FFF1B8 url(../img/promo-image.png) no-repeat top 50px right 50px / 400px;
+  background: #83c3ff34 url(../img/promo-image.png) no-repeat top 50px right 50px / 400px;
   border-radius: 10px;
   padding: 68px 70px;  
+}
+.promo-title{
+  color: #000000;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 39px;
+  line-height: 46px;
 }
 .promo-text{
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
-  color: #302C34;
+  color: #000000;
   max-width: 540px;
+  width: 50%;
 }
 .section-heading{
   margin-bottom: 44px;
@@ -91,12 +101,14 @@ body{
   margin: 0;
 }
 .cards{
+  padding-top: 50px;
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .cards a{
+  color: #000000;
   text-decoration: none;
 }
 .cards a:visited{
@@ -108,6 +120,9 @@ body{
   border-radius: 7px;
   overflow: hidden;
   margin-bottom: 30px;
+}
+.card:nth-last-child(0){
+  width: 30%;
 }
 .card-image{
   width: 380px;
@@ -145,7 +160,7 @@ body{
   margin-top: 10px;
 }
 .rating{
-  color: #FFC107;
+  color: #daaf31;
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
@@ -177,6 +192,7 @@ body{
 .footer{
   position: absolute;
   left: 0;
+  right: 0;
   width: 100%;
   padding: 50px 0px;
   background-color: #fff;
@@ -186,7 +202,7 @@ body{
   display: flex;
   justify-content: space-between;
 
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
 }
 .footer_content{
@@ -423,4 +439,206 @@ body{
   font-weight: bold;
   background: #262626;
   border-radius: 5px;
+}
+
+
+@media (max-width: 1270px) {
+  .container{
+    max-width: 960px;
+  }
+  .footer{
+    margin: auto;
+    max-width: 900px;
+  }
+  .restaurant-card-footer{
+    width: 80%;
+  }
+  .basket{
+    left: 14%;
+  }
+}
+
+
+@media (max-width:992px) {
+  .container{
+    max-width: 740px;
+  }
+  .header{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .input-address{
+    order: 3;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 500px;
+  }
+  .logo{
+    margin-right: 20%;
+  }
+  .button{
+    min-width: 130px;
+  }
+  .promo{
+  background: #83c3ff34 url(../img/promo-image.png) no-repeat top 50px right -200px / 400px;
+  }
+  .promo-text{
+    width: 70%;
+    max-width: 650px;
+  }
+  .cards{
+    justify-content: center;
+  }
+  .footer-inner{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .footer_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .footer_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .restaurant-card{
+    width: 45%;
+  }
+  .basket{
+    left: 0;
+    width:100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width:768px) {
+  .container{
+    width: 540px;
+  }
+  .promo{
+    padding: 25px ;
+  }
+  .promo-title{
+    width: 70%;
+    font-size: 30px;
+  }
+  .promo-text{
+    width: 65%;
+    font-size: 20px;
+  }
+  .restaurant{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurant-title{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .restaurant-info{
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .restaurant-card{
+    width: 100%;
+    height: 520px;
+  }
+  .restaurant-cards{
+    margin-bottom: 50px;
+  }
+  .basket-buttons{
+    right: -650%;
+  }
+}
+@media (max-width:578px) {
+  .container{
+    max-width: 90%;
+    margin-right: auto;
+  }
+  .logo{
+    width: 70%;
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+  .promo-title{
+    font-size: 26px;
+  }
+  .promo-text{
+    font-size: 16px;
+  }
+  .section-heading{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section-title{
+    margin-bottom: 40px;
+  }
+  .restaurant{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurant-title{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .restaurant-info{
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .restaurant-card{
+    height: 450px;
+  }
+  .basket{
+    height: 100%;
+  }
+  .basket-content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .basket-line{
+    margin: auto;
+    width: 45%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+  }
+  .basket-name{
+    margin-bottom: 20px;
+  }
+  .basket-content-inner{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .basket-price{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .basket-buttons{
+    right: -500%;
+  }
 }

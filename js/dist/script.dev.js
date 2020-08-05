@@ -5,10 +5,10 @@ $(function main() {
   var basket = $("#basket");
   var canceling = $("#canceling");
   var close = $("#close");
-  var quantity = $("#basket-quantity");
+  var quantity = $(".basket-quantity");
   var plus = $("#plus");
   var minus = $("#minus");
-  var number = 0; //окрыть
+  var num = 0; //окрыть
 
   $(function openBasket() {
     basketButton.click(function () {
@@ -31,6 +31,11 @@ $(function main() {
   
     }); */
 
-  document.getElementsByClass("ics").innerHTML = number;
+  while (num < 7) {
+    document.querySelectorAll(".basket-quantity")[num].innerHTML = number;
+    num++;
+  }
+
+  ;
 });
 //# sourceMappingURL=script.dev.js.map
